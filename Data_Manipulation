@@ -12,4 +12,13 @@ SELECT
 FROM
     (SELECT 1 AS num UNION SELECT 2 UNION SELECT 3 UNION SELECT 4 UNION SELECT 5
      UNION SELECT 6 UNION SELECT 7 UNION SELECT 8 UNION SELECT 9 UNION SELECT 10) AS numbers;
+----------------------------------------------------------------------------------------------------------------------
+-- This SQL query creates a clone of the users table called cloned_users and inserts records from the original users table into the cloned table
 
+-- Create a clone of the users table
+CREATE TABLE cloned_users LIKE users;
+
+-- Insert records into the cloned table
+INSERT INTO cloned_users (username, email)
+SELECT username, email
+FROM users;
