@@ -1,2 +1,2 @@
 # MySQL-Query-Catalog
-This repository serves as a comprehensive catalog of high-quality SQL queries specifically tailored for MySQL databases
+This repository serves as a comprehensive catalog of high-quality SQL queries specifically tailored for MySQL databases. It contains a curated collection of queries covering a wide range of topics, including data manipulation, optimization techniques, schema design, and more. Whether you're a beginner looking to learn SQL or an experienced MySQL developer seeking best practices and optimizations, this catalog provides valuable insights and ready-to-use queries to streamline your database tasks and improve efficiency.
