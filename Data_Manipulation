@@ -24,3 +24,22 @@ CREATE TABLE cloned_users LIKE users;
 INSERT INTO cloned_users (username, email)
 SELECT username, email
 FROM users;
+---------------------------------------------------------------------------------------------------------------------------
+# no 3
+The GREATEST() function in SQL returns the largest value from a list of arguments. Let's analyze each query and its expected output:
+
+NULL as Argument:
+SELECT GREATEST(NULL,10,3,4,6,9);
+Output: NULL
+
+SELECT GREATEST(5,10,3,4,6,9);
+Output: 10
+
+SELECT GREATEST(4.9,4.6,4.5,4.2,4.1);
+Output: 4.9
+
+SELECT GREATEST('educative', 'edpresso');
+Output: 'edpresso'
+
+SELECT GREATEST('10',1,'0');
+Output: 10
